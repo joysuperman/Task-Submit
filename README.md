@@ -10,8 +10,7 @@ The Latest Insights block displays a customizable grid of recent posts with pagi
 - Interactive popup to display post content
 - Customizable appearance and styling
 
-## ACF Fields
-The block uses Advanced Custom Fields with the following configuration options:
+## Use Fields
 
 - **Title** - Section title displayed above the posts grid
 - **Post Type** - Select which post types to display
@@ -57,9 +56,7 @@ The CTA Banner block creates an attention-grabbing call-to-action section with c
 -   Responsive design for all screen sizes
 
 
-## ACF Fields
-
-The block uses Advanced Custom Fields with the following configuration options:
+## Use Fields
 
 -   **Section Title** - Optional title displayed above the banner (default: "OTC Market Report")
 -   **Title** - Main banner heading (default: "Key Trends In OTC Markets")
