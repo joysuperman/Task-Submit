@@ -1,0 +1,136 @@
+{
+    "key": "group_196c5f998822f7f390041519",
+    "title": "Cta Banner (block)",
+    "fields": [
+        {
+            "key": "field_cta_banner_section_title",
+            "label": "Section Title",
+            "name": "section_title",
+            "type": "text",
+            "instructions": "Enter the section title that appears above the banner",
+            "required": 0,
+            "default_value": "OTC Market Report"
+        },
+        {
+            "key": "field_cta_banner_title",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "Enter the banner title",
+            "required": 1,
+            "default_value": "Key Trends In OTC Markets"
+        },
+        {
+            "key": "field_cta_banner_description",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea",
+            "instructions": "Enter the banner description text",
+            "required": 0,
+            "default_value": "Unlock essential information on market performance, emerging opportunities, and OTC trading patterns.",
+            "rows": 3,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_cta_banner_primary_button",
+            "label": "Primary Button",
+            "name": "primary_button",
+            "type": "group",
+            "instructions": "Configure the primary button",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_cta_banner_primary_button_text",
+                    "label": "Button Text",
+                    "name": "text",
+                    "type": "text",
+                    "default_value": "Explore Insights",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_cta_banner_primary_button_link",
+                    "label": "Button Link",
+                    "name": "link",
+                    "type": "url",
+                    "default_value": "https://lemon-hive.local/",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_cta_banner_secondary_button",
+            "label": "Secondary Button",
+            "name": "secondary_button",
+            "type": "group",
+            "instructions": "Configure the secondary button",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_cta_banner_secondary_button_text",
+                    "label": "Button Text",
+                    "name": "text",
+                    "type": "text",
+                    "default_value": "Get Full Report",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_cta_banner_secondary_button_link",
+                    "label": "Button Link",
+                    "name": "link",
+                    "type": "url",
+                    "default_value": "https://lemon-hive.local/",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_cta_banner_background_color",
+            "label": "Background Color",
+            "name": "background_color",
+            "type": "color_picker",
+            "instructions": "Choose a background color for the banner",
+            "default_value": "#FFFFFF"
+        },
+        {
+            "key": "field_cta_banner_background_image",
+            "label": "Background Image",
+            "name": "background_image",
+            "type": "image",
+            "instructions": "Choose a background image for the banner (optional)",
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "default_value": {
+                "url": "wp-content/themes/lh-theme/assets/images/default-cta-background.jpg",
+                "id": 0
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "lh\/cta-banner"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1747078191234
+}

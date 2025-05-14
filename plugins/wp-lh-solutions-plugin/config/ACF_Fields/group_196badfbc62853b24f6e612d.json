@@ -1,0 +1,174 @@
+{
+    "key": "group_196badfbc62853b24f6e612d",
+    "title": "latest-insights (block)",
+    "fields": [
+        {
+            "key": "field_latest-insights_selection_type",
+            "label": "Selection Type",
+            "name": "selection_type",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "Choose how to select posts for display",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "manual": "Manual Selection",
+                "category": "By Category",
+                "auto": "Auto (from current post's category)"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "manual",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_latest-insights_manual_posts",
+            "label": "Select Posts",
+            "name": "manual_posts",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "Select posts to display",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_latest-insights_selection_type",
+                        "operator": "==",
+                        "value": "manual"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post",
+                "news"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": 50,
+            "return_format": "object",
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_latest-insights_category",
+            "label": "Select Category",
+            "name": "category",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "Select a category to display posts from",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_latest-insights_selection_type",
+                        "operator": "==",
+                        "value": "category"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_latest-insights_title",
+            "label": "Section Title",
+            "name": "title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Enter a title for the section (optional)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Latest Insights",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_latest_insights_grid_columns",
+            "label": "Grid Columns",
+            "name": "grid_columns",
+            "type": "select",
+            "instructions": "Select how many columns to display in the grid",
+            "required": 0,
+            "choices": {
+                "1": "1 Column",
+                "2": "2 Columns",
+                "3": "3 Columns",
+                "4": "4 Columns",
+                "5": "5 Columns",
+                "6": "6 Columns"
+            },
+            "default_value": "3",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "return_format": "value"
+        },
+        {
+            "key": "field_latest_insights_posts_per_page",
+            "label": "Posts Per Page",
+            "name": "posts_per_page",
+            "type": "number",
+            "instructions": "Enter the number of posts to display per page",
+            "required": 0,
+            "default_value": 3,
+            "min": 1,
+            "max": 24,
+            "step": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "lh/latest-insights"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1747075012
+}

@@ -1,0 +1,177 @@
+@import '../../assets/build/css/import/functions';
+@import '../../assets/build/css/import/settings';
+
+.lh-acf-block.lh-acf-block-cta-banner {
+    .lh-cta-banner-block__container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    // Background image overlay
+    &[style*="background-image"] {
+        color: #ffffff;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            z-index: 1;
+        }
+
+        .lh-cta-banner__container {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    .lh-cta-banner__container {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        border: 1px solid#D4DDF2;
+        border-radius: 8px;
+        align-items: center;
+
+        @media (min-width: 576px) {
+            flex-direction: column;
+            padding: 60px;
+            gap: 30px;
+        }
+
+        @media (min-width: 991px) {
+            flex-direction: row;
+            gap: 50px;
+        }
+    }
+
+    .lh-cta-banner__content {
+        width: 100%;
+
+        @media (min-width: 576px) {
+            width: 100%;
+            padding-right: 15%;
+        }
+
+        @media (min-width: 991px) {
+            width: 70%;
+            padding-right: 32%;
+        }
+
+        .lh-cta-banner__title {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 10px;
+            color: #333;
+            padding-bottom: 20px;
+
+            @media (min-width: 991px) {
+                font-size: 32px;
+                padding-bottom: 40px !important;
+            }
+        }
+
+        .lh-cta-banner__description {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 15px;
+        }
+    }
+
+    .lh-cta-banner__buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        @media (min-width: 576px) {
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        @media (min-width: 991px) {
+            width: 30%;
+            flex-direction: column;
+        }
+
+        .lh-cta-banner__button {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+            width: 100%;
+
+            @media (min-width: 576px) {
+                width: auto;
+            }
+        }
+    }
+}
+
+// Header container spacing
+.lh-cta-banner__header {
+    margin-bottom: 30px;
+
+    @media (min-width: 576px) {
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: 991px) {
+        margin-bottom: 80px;
+    }
+}
+
+// Section title with important overrides
+h2.lh-cta-banner__title {
+    padding-bottom: 40px !important;
+    border-bottom: 1px solid #D4DDF2;
+    color: #00183D !important;
+    font-weight: 600 !important;
+    font-size: 28px !important;
+
+    @media (min-width: 576px) {
+        font-size: 32px !important;
+    }
+
+    @media (min-width: 991px) {
+        font-size: 36px !important;
+    }
+}
+
+// Button styles with important overrides
+.lh-cta-banner__button--primary {
+    background-color: #FD7A23;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+
+    &:hover {
+        background-color: darken(#FD7A23, 10%);
+    }
+}
+
+.lh-cta-banner__button--secondary {
+    background-color: #00183D;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+
+    &:hover {
+        background-color: darken(#00183D, 10%);
+    }
+}
+
+// Subtitle with important overrides
+h3.lh-cta-banner-content__title {
+    font-weight: 600 !important;
+    font-size: 28px !important;
+    text-transform: capitalize !important;
+    color: #00183D !important;
+}

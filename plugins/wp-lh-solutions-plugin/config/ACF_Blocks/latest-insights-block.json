@@ -1,0 +1,19 @@
+{
+    "name": "lh/latest-insights",
+    "title": "Latest Insights",
+    "icon": "admin-post",
+    "version": "1.0.0",
+    "description": "Display latest posts with flexible selection options",
+    "keywords": [
+        "block",
+        "posts",
+        "insights",
+        "latest"
+    ],
+    "example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {}
+        }
+    }
+}

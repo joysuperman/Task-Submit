@@ -1,0 +1,16 @@
+{
+    "name": "lh/cta-banner",
+    "title": "Cta Banner",
+    "icon": "megaphone",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [
+        "block"
+    ],
+    "example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {}
+        }
+    }
+}
